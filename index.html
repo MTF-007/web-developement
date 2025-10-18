@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 1</title>
+    <style>
+        #box {
+            background: linear-gradient(250deg, skyblue, teal);
+            padding: 5px;
+            width: 50%;
+            border: 2px solid black;
+            margin-bottom: 5px;
+        }
+
+        .first,
+        .second,
+        .third,
+        .forth,
+        .fifth,
+        .sixth {
+            padding: 5px;
+            font-weight: bolder;
+
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <div id="box">
+        <h1>Test Box</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio blanditiis suscipit dolores! Autem nulla
+            provident quisquam, voluptatibus beatae ducimus illum.</p>
+    </div>
+    <h1>Heading 1</h1>
+    <p class="first" style="background: grey;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+        ducimus voluptatum veritatis.</p>
+    <h2>Heading 2</h2>
+    <p class="second" style="background: yellowgreen;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Aspernatur ducimus voluptatum veritatis.</p>
+    <h3>Heading 3</h3>
+    <p class="third" style="background: teal;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+        ducimus voluptatum veritatis.</p>
+    <h4>Heading 4</h4>
+    <p class="forth" style="background: palevioletred;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Aspernatur ducimus voluptatum veritatis.</p>
+    <h5>Heading 5</h5>
+    <p class="fifth" style="background: orange;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+        ducimus voluptatum veritatis.</p>
+    <h6>Heading 6</h6>
+    <p class="sixth" style="background: indianred;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+        ducimus voluptatum veritatis.</p>
+    <marquee behavior="scroll" direction="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+        eveniet doloremque fuga a repellendus corrupti ipsa optio asperiores iusto nam, quia soluta.</marquee>
+    <br>
+    <button id="slidebtn">SLIDE</button>
+    <button id="hidebtn">Hide</button>
+    <script>
+        $(document).ready(function () {
+            $('#slidebtn').click(function () {
+                $('#box').slideToggle("slow");
+            });
+            $('#hidebtn').click(function () {
+                $('#box').hide();
+            });
+        })
+    </script>
+</body>
+
+</html>
